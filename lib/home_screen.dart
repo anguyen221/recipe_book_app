@@ -34,25 +34,33 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Recipe Book")),
-      body: ListView.builder(
-        itemCount: recipes.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(recipes[index]["name"]!),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => DetailsScreen(
-                    recipeName: recipes[index]["name"]!,
-                    ingredients: recipes[index]["ingredients"]!,
-                    instructions: recipes[index]["instructions"]!,
-                  ),
-                ),
-              );
-            },
-          );
-        },
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListView.builder(
+          itemCount: recipes.length,
+          itemBuilder: (context, index) {
+            return Card(
+              margin: EdgeInsets.symmetric(vertical: 6),
+              elevation: 3,
+              child: ListTile(
+                title: Text(recipes[index]["name"]!, style: TextStyle(fontWeight: FontWeight.bold)),
+                trailing: Icon(Icons.arrow_forward),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DetailsScreen(
+                        recipeName: recipes[index]["name"]!,
+                        ingredients: recipes[index]["ingredients"]!,
+                        instructions: recipes[index]["instructions"]!,
+                      ),
+                    ),
+                  );
+                },
+              ),
+            );
+          },
+        ),
       ),
     );
   }
