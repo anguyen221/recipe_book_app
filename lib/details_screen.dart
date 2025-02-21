@@ -6,28 +6,28 @@ class DetailsScreen extends StatelessWidget {
   final String instructions;
 
   const DetailsScreen({
-    Key? key,
+    super.key,
     required this.recipeName,
     required this.ingredients,
     required this.instructions,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(recipeName)),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Ingredients:", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            Text("Ingredients:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             SizedBox(height: 8),
-            Text(ingredients),
+            Text(ingredients, style: TextStyle(fontSize: 16)),
             SizedBox(height: 16),
-            Text("Instructions:", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            Text("Instructions:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             SizedBox(height: 8),
-            Text(instructions),
+            Text(instructions, style: TextStyle(fontSize: 16)),
           ],
         ),
       ),
