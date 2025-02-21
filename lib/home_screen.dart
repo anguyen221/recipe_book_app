@@ -4,29 +4,29 @@ import 'details_screen.dart';
 class HomeScreen extends StatelessWidget {
   final List<Map<String, String>> recipes = [
     {
-      "name": "Placeholder Recipe 1",
-      "ingredients": "- Ingredient A\n- Ingredient B\n- Ingredient C",
-      "instructions": "1. Step one.\n2. Step two.\n3. Step three."
+      "name": "Spaghetti Carbonara",
+      "ingredients": "- 200g spaghetti\n- 100g pancetta\n- 2 eggs\n- 50g Parmesan cheese\n- Black pepper\n- Salt",
+      "instructions": "1. Cook spaghetti until firm.\n2. Fry pancetta until crispy.\n3. Whisk eggs with Parmesan and pepper.\n4. Combine everything with pasta off heat.\n5. Serve immediately."
     },
     {
-      "name": "Placeholder Recipe 2",
-      "ingredients": "- Ingredient X\n- Ingredient Y\n- Ingredient Z",
-      "instructions": "1. Do this.\n2. Do that.\n3. Done!"
+      "name": "Chicken Alfredo",
+      "ingredients": "- 200g fettuccine\n- 1 chicken breast\n- 1 cup heavy cream\n- 50g Parmesan cheese\n- 2 cloves garlic\n- Butter, salt, and pepper",
+      "instructions": "1. Cook fettuccine until firm.\n2. Cook chicken in butter and garlic.\n3. Add cream and Parmesan, then simmer.\n4. Toss pasta with sauce.\n5. Serve hot."
     },
     {
-      "name": "Placeholder Recipe 3",
-      "ingredients": "- Ingredient P\n- Ingredient Q\n- Ingredient R",
-      "instructions": "1. Mix ingredients.\n2. Cook for 10 minutes.\n3. Serve."
+      "name": "Pancakes",
+      "ingredients": "- 1 cup flour\n- 1 cup milk\n- 1 egg\n- 2 tbsp sugar\n- 1 tsp baking powder\n- Butter for frying",
+      "instructions": "1. Mix dry ingredients.\n2. Whisk in milk and egg.\n3. Cook pancakes in butter until golden.\n4. Serve with syrup or toppings of choice."
     },
     {
-      "name": "Placeholder Recipe 4",
-      "ingredients": "- Ingredient L\n- Ingredient M\n- Ingredient N",
-      "instructions": "1. Preheat oven.\n2. Bake for 20 minutes.\n3. Let cool."
+      "name": "Guacamole",
+      "ingredients": "- 2 avocados\n- 1 lime\n- 1 tomato\n- 1 small onion\n- Salt and pepper",
+      "instructions": "1. Mash avocados.\n2. Mix in chopped tomato, onion, lime juice, salt, and pepper.\n3. Serve fresh."
     },
     {
-      "name": "Placeholder Recipe 5",
-      "ingredients": "- Ingredient D\n- Ingredient E\n- Ingredient F",
-      "instructions": "1. Chop ingredients.\n2. Fry until golden brown.\n3. Enjoy!"
+      "name": "Chocolate Chip Cookies",
+      "ingredients": "- 1 cup flour\n- ½ cup butter\n- ½ cup sugar\n- 1 egg\n- 1 tsp vanilla\n- ½ cup chocolate chips\n- ½ tsp baking soda",
+      "instructions": "1. Cream butter and sugar.\n2. Mix in egg and vanilla.\n3. Stir in flour, baking soda, and chocolate chips.\n4. Bake at 180°C (350°F) for 10-12 minutes."
     },
   ];
 
