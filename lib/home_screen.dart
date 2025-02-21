@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_book_app/details_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final List<String> recipes = [
@@ -19,7 +20,12 @@ class HomeScreen extends StatelessWidget {
           return ListTile(
             title: Text(recipes[index]),
             onTap: () {
-              // Will add later
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsScreen(recipeName: recipes[index]),
+                ),
+              );
             },
           );
         },
