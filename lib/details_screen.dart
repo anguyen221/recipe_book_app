@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatelessWidget {
   final String recipeName;
+  final String ingredients;
+  final String instructions;
 
-  const DetailsScreen({super.key, required this.recipeName});
+  const DetailsScreen({
+    Key? key,
+    required this.recipeName,
+    required this.ingredients,
+    required this.instructions,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +23,11 @@ class DetailsScreen extends StatelessWidget {
           children: [
             Text("Ingredients:", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             SizedBox(height: 8),
-            Text("- Placeholder Ingredient 1\n- Placeholder Ingredient 2\n- Placeholder Ingredient 3"),
+            Text(ingredients),
             SizedBox(height: 16),
             Text("Instructions:", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             SizedBox(height: 8),
-            Text("1. Placeholder step 1.\n2. Placeholder step 2.\n3. Placeholder step 3."),
+            Text(instructions),
           ],
         ),
       ),
